@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Controles/Css/estilo.css">
+    <script src="../Controles/js/js.js"></script>
+</head>
+
+<body>
+    <form action="./pagina2.html" method="GET">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <div>
+                <label for="txtNombre">Id
+                    <input type="txt" name="Nombre" required id="txtNombre">
+                </label>
+            </div>
+            <div>
+                <label for="txtpass">Pass:
+                    <input type="password" name="Clave" id="txtpass">
+                </label>
+            </div>
+            <div>
+                <label for="txtemail">Email:
+                    <input type="email" name="email" id="txtemail" required title="Password">
+                </label>
+            </div>
+            <div>
+                <label for="txtedad">Edad:
+                    <input type="number" name="edad" id="txtedad" value="30" min="18" max="90">
+                </label>
+            </div>
+            <div>
+                <label for=""></label>
+                <select name="pais" id="txtpais">
+                    <optgroup label="America">
+                        <option value="ar">Argentina</option>
+                        <option value="br">Brazil</option>
+                        <option value="ch">Chile</option>
+                        <option value="uy">Uruguay</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value="esp">españa</option>
+                        <option value="ale">Alemania</option>
+                        <option value="ita" selected>Italia</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <fieldset >
+                <legend>Sexo: </legend>
+                <input type="radio" name="sexo" id="Femenino" checked>
+                <label for="Femenino">Femenino</label>
+                <input type="radio" name="sexo" id="Masculino">
+                <label for="Masculino">Masculino</label>
+            </fieldset>
+            </div>
+            <label for="">COMENTARIOS</label>
+            <div>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+                
+        </fieldset>
+        <div>
+            <input type="submit" name="enviar" value="Login">
+        </div>
+    </form>
+    <button onclick="saludar();" id="btnSaludar">Saludar</button>
+</body>
+
+</html>
