@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = ['Juan', 'ana', 'julia', 'adrian', 'lucia'];
+        let numeros = [2, 4,4,4,4, 3, 5, 6];
+        let personas = [
+            {nombre: 'pedro', edad: 54, sexo: 'm'},
+            {nombre: 'miguel', edad: 14 , sexo: 'm'},
+            {nombre: 'miguel', edad: 14 , sexo: 'm'},
+            {nombre: 'miguel', edad: 14 , sexo: 'm'},
+            {nombre: 'miguel', edad: 14 , sexo: 'm'},
+            {nombre: 'miguel', edad: 14 , sexo: 'm'},
+            {nombre: 'luis', edad: 44 , sexo: 'f'}
+        ]
+        //creo un objetos de un array sin contenido repetido
+        let x= new Set(numeros);
+        console.log(x);
+        //cambio de objeto a array
+        let sinRepetir = [...x];
+        console.log(sinRepetir);
+        //agrego un nuevo metodo a todos los Array
+        Array.prototype.unique = function(){return  [...new Set(this)]};
+        console.log(numeros.unique());
+    </script>
+</body>
+
+</html>

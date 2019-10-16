@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = ['Juan', 'ana', 'julia', 'adrian', 'lucia'];
+        let numeros = [2, 4, 3, 5, 6];
+        // si esta
+        console.log(array.some(Element => Element === 'julia'));
+        //para todos
+        console.log(array.every(Element => Element === 'julia'));
+        //si todos contiene la letra a
+        console.log(array.every(Element => Element.includes('a')));
+        //si todos son mayores a 3 de length
+        console.log(array.every(Element => Element.length >=3 ));
+    </script>
+</body>
+
+</html>

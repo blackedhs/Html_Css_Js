@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let array = ['Juan','ana',true,23,[1,2,3],{nombre:"jorge",edad:20}];
+    //forma 1
+    array.forEach(Element=> console.log(Element));
+    //forma 1
+    array.forEach((Element,index,array)=> {
+        console.log(Element);
+        console.log(index);
+        console.log(array);
+    });
+    //forma 2
+    array.forEach(mostrar);
+    //forma 3
+    array.forEach(function (Element){
+        console.log(Element);
+    });
+    let numeros = [2, 4, 3, 5, 6];
+    // sort
+    console.log(numeros.sort((a,b)=> a-b));
+    // desestructuracion
+    let p = {
+        nombre: 'Fede',
+        edad : 22
+    };
+    let {nombre} =p;
+
+    
+
+    function mostrar(Element){
+        console.log(Element);
+    }
+    </script>
+</body>
+</html>
