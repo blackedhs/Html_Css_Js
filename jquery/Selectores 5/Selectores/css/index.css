@@ -1,0 +1,26 @@
+fieldset{
+    display: flex;
+    justify-content: center ;
+    text-align: center;
+    width: 50%;
+    border-style: dotted;
+    border-collapse: collapse;
+}
+.rojo{
+    background-color: red;
+    color: white;
+}
+.azul{
+    background-color: blue;
+    color: yellow;
+}
+.amarillo{
+    background-color: yellow;
+    color: blue;
+}
+.letraGrande{
+    font-size: 200%;
+}
+h1{
+    text-align-last: center;
+}
